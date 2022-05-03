@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane minHeight="768.0" minWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ctrl.RootCtrl">
+   <top>
+      <VBox alignment="CENTER" prefHeight="60.0" style="-fx-background-color: #252525;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" minHeight="60.0" text="상품관리시스템" textAlignment="CENTER" textFill="#eeeeee">
+               <font>
+                  <Font name="HYPost-Medium" size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </top>
+   <left>
+      <VBox alignment="TOP_CENTER" prefWidth="120.0" spacing="15.0" style="-fx-background-color: #D3D3D3;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btn_show_default" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#show_default" prefHeight="50.0" prefWidth="120.0" text="기본정보조회" textAlignment="CENTER" />
+            <Button fx:id="btn_show_stock" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#show_stock" prefHeight="50.0" prefWidth="120.0" text="재고정보조회" textAlignment="CENTER" />
+            <Button fx:id="btn_show_deal" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#show_deal" prefHeight="50.0" prefWidth="120.0" text="입출내역조회" textAlignment="CENTER" />
+            <Button fx:id="btn_addnew" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#addnew" prefHeight="50.0" prefWidth="120.0" text="신규항목입력" textAlignment="CENTER" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="15.0" />
+         </padding>
+      </VBox>
+   </left>
+   <center>
+      <BorderPane fx:id="bp_main" prefHeight="708.0" prefWidth="844.0" style="-fx-background-color: #d3d3d3;" BorderPane.alignment="CENTER">
+         <center>
+            <Label text="메뉴를 선택하세요" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="HYHeadLine-Medium" size="36.0" />
+               </font>
+            </Label>
+         </center></BorderPane>
+   </center>
+   <right>
+      <VBox alignment="TOP_CENTER" prefWidth="120.0" spacing="15.0" style="-fx-background-color: #d3d3d3;" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="15.0" />
+         </padding>
+      </VBox>
+   </right>
+</BorderPane>

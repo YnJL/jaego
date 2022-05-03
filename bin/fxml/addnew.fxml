@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="bp_add" minHeight="480" minWidth="640" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ctrl.AddNewCtrl">
+   <top>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="50.0" style="-fx-background-color: #cccccc;" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="50.0" text="신규 항목 입력">
+               <font>
+                  <Font name="HYPost-Medium" size="35" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Label>
+            <ChoiceBox fx:id="new_cmb" prefHeight="30.0" prefWidth="150.0" />
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

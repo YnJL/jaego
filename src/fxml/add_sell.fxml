@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane minHeight="380" minWidth="640" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ctrl.CtrlAddSell">
+   <center>
+      <GridPane alignment="CENTER" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #eeeeee;" GridPane.columnSpan="2">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="신규판매등록" textAlignment="CENTER">
+                     <font>
+                        <Font name="HYPost-Medium" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #eeeeee;" GridPane.columnIndex="2">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="판매번호" textAlignment="CENTER">
+                     <font>
+                        <Font name="HYPost-Medium" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="330.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="고객번호" textAlignment="CENTER">
+                     <font>
+                        <Font name="HYPost-Medium" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="고객명" textAlignment="CENTER">
+                     <font>
+                        <Font name="HYPost-Medium" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="관리번호" textAlignment="CENTER">
+                     <font>
+                        <Font name="HYPost-Medium" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="거래일시" textAlignment="CENTER">
+                     <font>
+                        <Font name="HYPost-Medium" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="3">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="거래단위" textAlignment="CENTER">
+                     <font>
+                        <Font name="HYPost-Medium" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="거래수량" textAlignment="CENTER">
+                     <font>
+                        <Font name="HYPost-Medium" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="4">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="단위가격" textAlignment="CENTER">
+                     <font>
+                        <Font name="HYPost-Medium" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="거래총액" textAlignment="CENTER">
+                     <font>
+                        <Font name="HYPost-Medium" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #eeeeee;" GridPane.columnIndex="3">
+               <children>
+                  <TextField fx:id="txt_sellid" maxWidth="120.0" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <ComboBox fx:id="cb_custid" maxWidth="120.0" />
+                  <TextField fx:id="txt_custid" disable="true" editable="false" maxHeight="0.0" maxWidth="0.0" minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="0.0" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <children>
+                  <TextField fx:id="txt_custname" disable="true" editable="false" maxWidth="120.0" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <children>
+                  <TextField fx:id="txt_sellunit" disable="true" editable="false" maxWidth="120.0" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <children>
+                  <TextField fx:id="txt_sellqnty" maxWidth="120.0" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <children>
+                  <TextField fx:id="txt_sellprce" maxWidth="120.0" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <children>
+                  <TextField fx:id="txt_selltotl" disable="true" editable="false" maxWidth="120.0" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <ComboBox fx:id="cb_prodid" maxWidth="120.0" />
+                  <TextField fx:id="txt_prodid" disable="true" editable="false" maxWidth="120.0" />
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <children>
+                  <TextField fx:id="txt_selldate" maxWidth="120.0" />
+                  <DatePicker fx:id="dp_selldate" maxHeight="0.0" maxWidth="0.0" minHeight="0.0" minWidth="0.0" onAction="#sel_selldate" prefHeight="0.0" prefWidth="0.0" />
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+   </center>
+     <bottom>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="50.0" style="-fx-background-color: #cccccc;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btn_add" mnemonicParsing="false" onAction="#add" prefHeight="25.0" prefWidth="80.0" text="입력하기" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

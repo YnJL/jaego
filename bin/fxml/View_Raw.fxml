@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="bp_raw" maxHeight="708.0" maxWidth="844.0" prefHeight="708.0" prefWidth="844.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ctrl.RawCtrl">
+   <top>
+      <HBox alignment="CENTER" prefHeight="25.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btn_stoc" mnemonicParsing="false" onAction="#open_stoc" prefHeight="25.0" prefWidth="100.0" text="재고목록" />
+            <Button fx:id="btn_buyy" mnemonicParsing="false" onAction="#open_buyy" prefHeight="25.0" prefWidth="100.0" text="구매목록" />
+            <Button fx:id="btn_sell" mnemonicParsing="false" onAction="#open_sell" prefHeight="25.0" prefWidth="100.0" text="판매목록" />
+            <Button fx:id="btn_farm" mnemonicParsing="false" onAction="#open_farm" prefHeight="25.0" prefWidth="100.0" text="농장목록" />
+            <Button fx:id="btn_cust" mnemonicParsing="false" onAction="#open_cust" prefHeight="25.0" prefWidth="100.0" text="고객목록" />
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="50.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#sel_mod" prefHeight="50.0" prefWidth="120.0" text="선택항목수정" textAlignment="CENTER" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#sel_del" prefHeight="50.0" prefWidth="120.0" text="선택항목삭제" textAlignment="CENTER" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </bottom>
+</BorderPane>

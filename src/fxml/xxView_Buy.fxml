@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<BorderPane fx:id="borderPane" prefHeight="708.0" prefWidth="844.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ctrl.xxxBuyCtrl">
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btn_add" mnemonicParsing="false" onAction="#add" prefHeight="30.0" prefWidth="50.0" text="추가" />
+            <Button fx:id="btn_mod" mnemonicParsing="false" onAction="#mod" prefHeight="30.0" prefWidth="50.0" text="수정" />
+            <Button fx:id="btn_del" mnemonicParsing="false" onAction="#del" prefHeight="30.0" prefWidth="50.0" text="삭제" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </bottom>
+</BorderPane>
